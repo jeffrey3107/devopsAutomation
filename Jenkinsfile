@@ -4,14 +4,14 @@ pipeline {
         stage('Jeffrey - Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t <dockerhub-username>/jenkins-project:latest .'
+                    sh 'docker build -t aquenokhe/jenkins-project:latest .'
                 }
             }
         }
         stage('Jeffrey - Login to Dockerhub') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: '<dockerhub-credentials-id>', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                         sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
                     }
                 }
@@ -20,7 +20,7 @@ pipeline {
         stage('Jeffrey - Push image to Dockerhub') {
             steps {
                 script {
-                    sh 'docker push <dockerhub-username>/jenkins-project:latest'
+                    sh 'docker push aquenokhe/jenkins-project:latest'
                 }
             }
         }
