@@ -1,4 +1,4 @@
-CI/CD Pipeline with Jenkins and Docker
+# CI/CD Pipeline with Jenkins and Docker
 
 Project Overview
 This project automates the creation and deployment of Docker images using a CI/CD pipeline. The pipeline is triggered whenever code is committed to a GitHub repository. Upon a successful build, Jenkins generates a Docker image and pushes it to DockerHub.
