@@ -1,7 +1,6 @@
 # CI/CD Pipeline with Jenkins and Docker
 
-[[![Build Status](http://98.84.103.138:8080/buildStatus/icon?job=connectJenkinsToGithub)](http://98.84.103.138:8080/job/connectJenkinsToGithub/)](http://98.84.103.138:8080/job/connectJenkinsToGithub/)
-
+[[[![Build Status](http://98.84.103.138:8080/buildStatus/icon?job=connectJenkinsToGithub)](http://98.84.103.138:8080/job/connectJenkinsToGithub/)]
 **Project Overview**  
 This project automates the creation and deployment of Docker images using a CI/CD pipeline. The pipeline is triggered whenever code is committed to a GitHub repository. Upon a successful build, Jenkins generates a Docker image and pushes it to DockerHub.
 
