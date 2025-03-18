@@ -26,4 +26,4 @@ Docker: Containerization platform for building and deploying images.
 GitHub: Version control for managing code repositories.
 DockerHub: Image registry to store and distribute Docker images.
 
-_We are testing that our project works initiating a CI/CD Pipleline in Jenkins and pushing Docker Image to Dockerhub..._
+
